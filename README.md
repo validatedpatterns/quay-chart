@@ -2,7 +2,7 @@
 
 <!-- markdownlint-disable MD013 -->
 
-![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.9](https://img.shields.io/badge/AppVersion-3.9-informational?style=flat-square)
+![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.9](https://img.shields.io/badge/AppVersion-3.9-informational?style=flat-square)
 
 <!-- markdownlint-enable MD013 -->
 
@@ -28,28 +28,28 @@ This chart is used to serve as the template for Validated Patterns Charts
 
 ## Values
 
-| Key                                          | Type   | Default                                        | Description |
-| -------------------------------------------- | ------ | ---------------------------------------------- | ----------- |
-| job.image                                    | string | `"registry.redhat.io/openshift4/ose-cli:4.15"` |             |
-| job.resources.limits.cpu                     | string | `"500m"`                                       |             |
-| job.resources.limits.memory                  | string | `"256Mi"`                                      |             |
-| job.resources.requests.cpu                   | string | `"50m"`                                        |             |
-| job.resources.requests.memory                | string | `"128Mi"`                                      |             |
-| objectStorage.objectBucketClaim.bucketName   | string | `"quay-datastore"`                             |             |
-| objectStorage.objectBucketClaim.name         | string | `"quay-bucket"`                                |             |
-| objectStorage.objectBucketClaim.storageClass | string | `"openshift-storage.noobaa.io"`                |             |
-| quay.configBundleSecret.deploy               | bool   | `true`                                         |             |
-| quay.configBundleSecret.name                 | string | `"quay-init-config-bundle-secret"`             |             |
-| quay.namespace                               | string | `"quay-enterprise"`                            |             |
-| quay.setup.admin.email                       | string | `"quayadmin@example.com"`                      |             |
-| quay.setup.admin.name                        | string | `"quayadmin"`                                  |             |
-| quay.setup.user.email                        | string | `"developer1@myorg.com"`                       |             |
-| quay.setup.user.name                         | string | `"developer1"`                                 |             |
-| quay.storage.clairpostgres.size              | string | `"50Gi"`                                       |             |
-| quay.storage.postgres.size                   | string | `"50Gi"`                                       |             |
-| quay_config.org.email                        | string | `"devel@myorg.com"`                            |             |
-| quay_config.org.name                         | string | `"devel"`                                      |             |
-| quay_config.repo                             | string | `"example"`                                    |             |
+| Key                                          | Type   | Default                                               | Description |
+| -------------------------------------------- | ------ | ----------------------------------------------------- | ----------- |
+| job.image                                    | string | `"registry.redhat.io/openshift4/ose-cli-rhel9:v4.20"` |             |
+| job.resources.limits.cpu                     | string | `"500m"`                                              |             |
+| job.resources.limits.memory                  | string | `"256Mi"`                                             |             |
+| job.resources.requests.cpu                   | string | `"50m"`                                               |             |
+| job.resources.requests.memory                | string | `"128Mi"`                                             |             |
+| objectStorage.objectBucketClaim.bucketName   | string | `"quay-datastore"`                                    |             |
+| objectStorage.objectBucketClaim.name         | string | `"quay-bucket"`                                       |             |
+| objectStorage.objectBucketClaim.storageClass | string | `"openshift-storage.noobaa.io"`                       |             |
+| quay.configBundleSecret.deploy               | bool   | `true`                                                |             |
+| quay.configBundleSecret.name                 | string | `"quay-init-config-bundle-secret"`                    |             |
+| quay.namespace                               | string | `"quay-enterprise"`                                   |             |
+| quay.setup.admin.email                       | string | `"quayadmin@example.com"`                             |             |
+| quay.setup.admin.name                        | string | `"quayadmin"`                                         |             |
+| quay.setup.user.email                        | string | `"developer1@myorg.com"`                              |             |
+| quay.setup.user.name                         | string | `"developer1"`                                        |             |
+| quay.storage.clairpostgres.size              | string | `"50Gi"`                                              |             |
+| quay.storage.postgres.size                   | string | `"50Gi"`                                              |             |
+| quay_config.org.email                        | string | `"devel@myorg.com"`                                   |             |
+| quay_config.org.name                         | string | `"devel"`                                             |             |
+| quay_config.repo                             | string | `"example"`                                           |             |
 
 <!-- markdownlint-enable MD013 MD034 MD060 -->
 
