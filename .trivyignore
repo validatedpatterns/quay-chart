@@ -1,4 +1,4 @@
-# AVD-KSV-0125: registry.redhat.io trusted; S3 job uses ose-cli from Red Hat
+# AVD-KSV-0125: S3 job uses OpenShift built-in cli ImageStream (cluster-internal registry)
 AVD-KSV-0125
 # AVD-KSV-0113: S3 setup Role intentionally needs secret get/create/patch for quay config bundle
 AVD-KSV-0113

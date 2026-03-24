@@ -19,6 +19,8 @@ skip-check:
   - CKV_K8S_38
   # CKV_K8S_40: Job uses OpenShift namespace default UID (high UID assigned at runtime, no anyuid needed)
   - CKV_K8S_40
+  # CKV_K8S_14: ImageStream tag tracks the cluster version; no fixed tag by design
+  - CKV_K8S_14
   # CKV_K8S_43: Image digest; chart uses tag, digest is deployment-specific
   - CKV_K8S_43
   # CKV_SECRET_6: False positives - templates use placeholders, script refs to cluster secrets only
